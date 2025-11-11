@@ -17,6 +17,8 @@ class PostController extends Controller
 
     //Función para mostrar un post específico según el parámetro {post} ingresado en la URL
     public function show($post){
+        
+        //compact(post) también es una opción similar para enviar variables a la vista;
         return view('post.show', [
             'post' => $post
         ]);
