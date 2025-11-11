@@ -15,7 +15,7 @@ class PostController extends Controller
         return view('post.create');
     }
 
-    //Función para mostrar un post específico según el parámetro {post}
+    //Función para mostrar un post específico según el parámetro {post} ingresado en la URL
     public function show($post){
         return view('post.show', [
             'post' => $post
