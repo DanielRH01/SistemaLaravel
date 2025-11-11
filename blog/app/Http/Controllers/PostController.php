@@ -6,14 +6,16 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    //Creación de métodos para las rutas definidas en web.php
     public function index(){
-        return "Aquí se mostrarán todos los post";
+        return view('post.index');
     }
 
     public function create(){
-        return "Aquí se mostrará el formulario para crear un post";
+        return view('post.create');
     }
 
+    //Función para mostrar un post específico según el parámetro {post}
     public function show($post){
         return view('post.show', [
             'post' => $post
