@@ -1,6 +1,6 @@
 
 <!--con este componente podemos traer el tipo de alerta que necesitemos en la etiqueta x-alert-->
-@props(['type'])
+@props(['type' => 'info'])
 
 <?php
     // Mediante un switch asignamos las clases de Tailwind correspondientes a cada tipo de alerta
@@ -20,6 +20,9 @@
         case 'dark':
             $class = 'text-gray-800 bg-gray-50 dark:bg-gray-800 dark:text-gray-300';
             break;
+        default:
+            $class = 'text-blue-800 bg-blue-50 dark:bg-gray-800 dark:text-blue-400';
+
     }
 ?>
     <!--    // Colocaremos la variable $class en el div para que tome las clases según el tipo de alerta

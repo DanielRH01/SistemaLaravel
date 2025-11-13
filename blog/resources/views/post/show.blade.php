@@ -18,5 +18,6 @@
             <span class="font-medium">Info alert!</span>Contenido no disponible.
         </div>
     @endif
+    
 </body>
 </html>

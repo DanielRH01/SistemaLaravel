@@ -10,7 +10,7 @@
     <div class="max-w-4xl mx-auto px-4">
         <!--<h1>Aquí se mostrarán todos los post</h1>-->
 
-        <x-alert type="warning">
+        <x-alert type="danger">
             <x-slot name="inf">MENSAJE: </x-slot>
             ¡CUIDADO!
         </x-alert>
